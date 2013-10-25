@@ -1,0 +1,27 @@
+#include<stdio.h>
+int ascii[128];
+int main()
+{
+    int c;
+    int i,j;
+    int count=0;
+    while((c=getchar()) != EOF)
+    {
+        if(c!='\n') {
+      ++ascii[c];
+       count++;}
+    }
+    printf("histogram of the frequencies of different characters \n");
+    printf("count: %d\n",count);
+   /* for(i=0;i<count;i++)
+    {
+       for(j=0;j<ascii[i];j++)
+          printf("*");
+      printf("\n");
+    }*/
+    for(i=0;i<count;i++)
+        printf("%d\n",ascii[i]);
+    return 0;
+}
+
+            
