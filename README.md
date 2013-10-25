@@ -1,2 +1,2 @@
-The_C_Programing_Language_solutions
-===================================
+Solutions for K&R C
+===================
